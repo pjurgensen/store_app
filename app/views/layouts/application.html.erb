@@ -6,16 +6,22 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 
+  <link href='http://fonts.googleapis.com/css?family=Acme|Cabin+Condensed:400,600|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
+<%= render 'layouts/header' %>
+
+<div class="container flash">
+  <span class="green"><%= flash[:notice] %></span>
+  <span class="red"><%= flash[:alert] %></span>
+</div>
+
 <%= yield %>
 
-<% flash.each do |name, msg| %>
-  <%= content_tag :div, msg, id: "flash_#{name}" %>
-<% end %>
+<%= render 'layouts/footer' %>
 
 </body>
 </html>

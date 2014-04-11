@@ -1,4 +1,7 @@
 class ProductsController < ApplicationController
+  def home
+  end
+
   def index
     @products = Product.all
   end
@@ -10,9 +13,9 @@ class ProductsController < ApplicationController
   def create
     @product = Product.new(product_params)
     if @product.save
-      redirect_to product_path(@product), notice: "Product Saved"
+      redirect_to product_path(@product), notice: "Product saved successfully"
     else
-      render 'new', notice: "Invalid Entry. Please try again."
+      render 'new', notice: "Invalid entry. Please try again."
     end
   end
 
@@ -27,9 +30,9 @@ class ProductsController < ApplicationController
   def update
     @product = Product.find(params[:id])
     if @product.update(product_params)
-      redirect_to product_path(@product), notice: "Product Updated"
+      redirect_to product_path(@product), notice: "Product updated successfully"
     else
-      render 'edit', notice: "Invalid Entry. Please try again."
+      render 'edit', notice: "Invalid entry. Please try again."
     end
   end
 

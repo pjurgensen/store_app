@@ -1,0 +1,78 @@
+$Acme: 'Acme', sans-serif;
+$CabinCondense: 'Cabin Condensed', sans-serif;
+$RobotoCondensed: 'Roboto Condensed', sans-serif;
+$BrandColor: #BF0433;
+$SecondaryColor: #CCCCCC;
+
+/*================================= HEADER =================================*/
+
+.header {
+  background-color: $BrandColor;
+  color: white;
+  ul li {
+    list-style: none;
+  }
+}
+
+.brand {
+  font-family: $Acme;
+  font-size: 1.7em;
+  padding-top: 8px;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: SecondaryColor;
+    text-decoration: none;
+  }
+  li {
+    display: inline;
+  }
+}
+
+/*================================== BODY ==================================*/
+
+.flash {
+  margin-top: 60px;
+  right: 0px;
+  font-size: 2em;
+  .green {
+    list-style: none;
+    color: #048029;
+  }
+}
+
+.red {
+  list-style: none;
+  color: $BrandColor;
+}
+
+.main-page {
+  margin: 0 auto;
+  margin-top: 150px;
+  text-align: center;
+  h1 {
+    font-family: $Acme;
+    font-size: 3.5em;
+  }
+  h3 {
+    font-family: $Acme;
+    font-size: 2.5em;
+    margin-top: 8px;
+  }
+  .main_fashion {
+    border: 1px solid $BrandColor;
+  }
+  .signup-button {
+    padding: 20px 30px;
+    color: white;
+    font-size: 1.5em;
+    margin-top: 20px;
+  }
+}
+/*================================= FOOTER =================================*/
+
+.footer {
+  background-color: WhiteSmoke;
+}
