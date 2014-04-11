@@ -79,14 +79,15 @@ $SecondaryColor: #CCCCCC;
     font-size: 2.3em;
     margin-top: 8px;
   }
-  .signup-button {
-    padding: 20px 30px;
-    background-color: $BrandColor;
-    color: $SecondaryColor;
-    font-size: 1.5em;
-    margin-top: 20px;
+  .brand-button {
+  padding: 20px 30px;
+  background-color: $BrandColor;
+  color: $SecondaryColor;
+  font-size: 1.5em;
+  margin-top: 20px;
   }
-  .signup-button:hover {
+
+  .brand-button:hover {
     color: $BrandColor;
     text-decoration: none;
   }
@@ -106,9 +107,36 @@ $SecondaryColor: #CCCCCC;
 .user-page {
   margin: 0 auto;
   margin-top: 50px;
-  .user-right {
-    margin-top: 100px;
+}
+
+.brand-grey {
+  .brand-button {
+  padding: 10px 20px;
+  background-color: $SecondaryColor;
+  color: $BrandColor;
+  font-size: 1.2em;
+  margin-top: 10px;
   }
+  .brand-button:hover {
+    color: $BrandColor;
+    text-decoration: none;
+  }
+}
+
+.brand-red {
+  .brand-button {
+  padding: 10px 20px;
+  background-color: $BrandColor;
+  color: $SecondaryColor;
+  font-size: 1.2em;
+  margin-top: 10px;
+  margin-left: 15px;
+  }
+  .brand-button:hover {
+    color: $BrandColor;
+    text-decoration: none;
+  }
+
 }
 
 .session-page {

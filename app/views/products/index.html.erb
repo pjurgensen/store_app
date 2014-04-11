@@ -2,8 +2,7 @@
 
 <div class="all-product container">
 
-  <h1>Patti and Maigen's Apparel</h1>
-  <h2>It's based on our names.</h2>
+  <h1>All Products</h1>
 
   <ul>
     <% @products.each do |product| %>
@@ -11,7 +10,7 @@
     <% end %>
   </ul>
 
-  <p> <%= link_to 'Create New Product', new_product_path %>
-  </p>
+  <p> <%= link_to 'Add new product', new_product_path %></p>
+  <p> <%= link_to 'Homepage', root_path %></p>
 
 </div>

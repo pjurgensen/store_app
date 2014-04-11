@@ -4,13 +4,14 @@
 
   <h1><%= @product.name %></h1>
 
-  <p><%= @product.description %></p>
+  <h3><%= @product.description %></h3>
 
-  <p>$ <%= @product.price %></p>
+  <p><strong>$ <%= @product.price %></strong></p>
 
+  <br />
 
   <p><%= link_to "Edit Product", edit_product_path(@product) %></p>
-  <p><%= link_to "Homepage", products_path %></p>
+  <p><%= link_to "Homepage", root_path %></p>
   <p><%= link_to "Delete Product", product_path(@product),
                             :data => {:confirm => "You sure?",
                                       :method => "delete"} %></p>

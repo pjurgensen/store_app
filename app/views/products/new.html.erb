@@ -3,7 +3,10 @@
 <div class="new-product container">
 
   <h1>Add New Product</h1>
-
+  <br />
   <%= render 'form' %>
 
+  <div class="brand-red">
+    <p><%= link_to "User page", user_path(current_user), class: "brand-button btn btn-default" %></p>
+  </div>
 </div>

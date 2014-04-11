@@ -1,6 +1,8 @@
-<div class="user-page container">
+<div class="brand-grey user-page container">
   <div class="row">
     <div class="col-md-6 user-left">
       <h1>Welcome <%= @user.email %></h1>
+
+      <%= link_to "Add new product", new_product_path, class: "brand-button btn btn-default" %>
   </div>
 </div>
