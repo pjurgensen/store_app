@@ -90,6 +90,16 @@ $SecondaryColor: #CCCCCC;
     text-decoration: none;
   }
 }
+
+.input-page {
+  .field input {
+    width: 200px;
+  }
+  .actions {
+    margin-top: 10px;
+  }
+}
+
 /*================================= FOOTER =================================*/
 
 .footer {
