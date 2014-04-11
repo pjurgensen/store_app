@@ -80,9 +80,14 @@ $SecondaryColor: #CCCCCC;
   }
   .signup-button {
     padding: 20px 30px;
-    color: white;
+    background-color: $BrandColor;
+    color: $SecondaryColor;
     font-size: 1.5em;
     margin-top: 20px;
+  }
+  .signup-button:hover {
+    color: $BrandColor;
+    text-decoration: none;
   }
 }
 /*================================= FOOTER =================================*/

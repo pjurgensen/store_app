@@ -1,7 +1,6 @@
 require 'spec_helper'
 
 describe User do
-  it { should validate_presence_of :username }
   it { should validate_presence_of :email }
   it { should allow_value('example@example.org', 'another.example@example.org').for(:email)}
   it { should validate_uniqueness_of :email }
