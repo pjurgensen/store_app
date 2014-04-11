@@ -51,8 +51,9 @@ $SecondaryColor: #CCCCCC;
 /*================================== BODY ==================================*/
 
 .flash {
-  margin-top: 60px;
-  right: 0px;
+  margin-top: 80px;
+  text-align: right;
+  padding-right: 100px;
   font-size: 2em;
   .green {
     list-style: none;
@@ -92,6 +93,25 @@ $SecondaryColor: #CCCCCC;
 }
 
 .input-page {
+  margin: 0 auto;
+  margin-top: 50px;
+  .field input {
+    width: 200px;
+  }
+  .actions {
+    margin-top: 10px;
+  }
+}
+
+.user-page {
+  margin: 0 auto;
+  margin-top: 50px;
+  .user-right {
+    margin-top: 100px;
+  }
+}
+
+.session-page {
   .field input {
     width: 200px;
   }
