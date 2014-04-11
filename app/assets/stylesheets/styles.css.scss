@@ -1,6 +1,6 @@
 $Acme: 'Acme', sans-serif;
 $CabinCondense: 'Cabin Condensed', sans-serif;
-$RobotoCondensed: 'Roboto Condensed', sans-serif;
+$BrandFont: 'Roboto Condensed', sans-serif;
 $BrandColor: #BF0433;
 $SecondaryColor: #CCCCCC;
 
@@ -15,7 +15,7 @@ $SecondaryColor: #CCCCCC;
 }
 
 .brand {
-  font-family: $Acme;
+  font-family: $BrandFont;
   font-size: 1.7em;
   padding-top: 8px;
   a {
@@ -23,7 +23,7 @@ $SecondaryColor: #CCCCCC;
     text-decoration: none;
   }
   a:hover {
-    color: SecondaryColor;
+    color: $SecondaryColor;
     text-decoration: none;
   }
   li {
@@ -53,16 +53,13 @@ $SecondaryColor: #CCCCCC;
   margin-top: 150px;
   text-align: center;
   h1 {
-    font-family: $Acme;
+    font-family: $BrandFont;
     font-size: 3.5em;
   }
   h3 {
-    font-family: $Acme;
-    font-size: 2.5em;
+    font-family: $BrandFont;
+    font-size: 2.3em;
     margin-top: 8px;
-  }
-  .main_fashion {
-    border: 1px solid $BrandColor;
   }
   .signup-button {
     padding: 20px 30px;
