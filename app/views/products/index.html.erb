@@ -1,7 +1,16 @@
-<h1>Awesome Apparel</h1>
+<%= content_for(:title, "Products") %>
 
-<ul>
-  <% @products.each do |product| %>
-    <li><%= product.name %>: <%= product.price %>, <br> <%= product.description %></li>
-  <% end %>
-</ul>
+<div class="all-product container">
+
+  <h1>Awesome Apparel</h1>
+
+  <ul>
+    <% @products.each do |product| %>
+      <li><%= product.name %>: <%= product.price %>, <br> <%= product.description %></li>
+    <% end %>
+  </ul>
+
+  <p> <%= link_to 'Create New Product', new_product_path %>
+  </p>
+
+</div>
