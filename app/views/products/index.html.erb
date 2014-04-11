@@ -6,7 +6,7 @@
 
   <ul>
     <% @products.each do |product| %>
-      <li><%= product.name %>: <%= product.price %>, <br> <%= product.description %></li>
+      <li><%= link_to product.name, product_path(product) %></li>
     <% end %>
   </ul>
 
