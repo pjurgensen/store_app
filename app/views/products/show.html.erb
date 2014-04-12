@@ -11,9 +11,11 @@
   <br />
 
   <p><%= link_to "Edit Product", edit_product_path(@product) %></p>
-  <p><%= link_to "Homepage", root_path %></p>
   <p><%= link_to "Delete Product", product_path(@product),
                             :data => {:confirm => "You sure?",
                                       :method => "delete"} %></p>
+  <br />
+  <p><%= link_to "Show all products", products_path %></p>
+  <p><%= link_to "Homepage", root_path %></p>
 
 </div>
