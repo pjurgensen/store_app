@@ -3,6 +3,8 @@
     <div class="col-md-6 user-left">
       <h1>Welcome <%= @user.email %></h1>
 
+      <%= image_tag @user.avatar.url(:medium), class: "user-avatar" %>
+
       <%= link_to "Add new product", new_product_path, class: "brand-button btn btn-default" %>
   </div>
 </div>
